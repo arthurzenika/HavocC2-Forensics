@@ -208,7 +208,7 @@ def parse_request(http_pair, magic_bytes, save_path):
         command = demon_constants.get(command_id, f'Unknown Command ID: {command_id}')
 
         print(f"    [-] C2 Address: {request.get('uri')}")
-        print(f"    [-] Comamnd: {command}")
+        print(f"    [-] Command: {command}")
 
     else:
         print(f"  [+] Unknown Command: {request_header['command_id']}")
